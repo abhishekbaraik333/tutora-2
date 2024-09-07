@@ -203,7 +203,7 @@ body {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 640px) {
   .navbar {
     margin-left: 40px;
   }
@@ -410,7 +410,7 @@ body {
   padding-top: 30px;
   padding-left: 90px;
   font-size: 40px;
-  color: var(--white);
+  color: #fff;
   font-family: "antonio-bold";
 }
 
@@ -1186,7 +1186,6 @@ footer {
 @media screen and (max-width: 640px) {
   .box p {
     margin-top: 40px;
-    color: #707070;
     padding: 0 10px;
   }
   .text-start {
