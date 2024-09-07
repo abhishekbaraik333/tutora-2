@@ -634,7 +634,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   
-  justify-content: space-around;
+  justify-content: center;
   
   align-items: center;
   flex-wrap: wrap;
@@ -704,7 +704,7 @@ body {
     display: -ms-flexbox;
     display: flex;
     
-    justify-content: space-around;
+    justify-content: center;
     
       align-items: center;
     gap: 30px;
@@ -1040,14 +1040,6 @@ footer {
     max-width: 340px;
   }
 
-  /* .all-clients .clients {
-    display: -webkit-box; display: -ms-flexbox; display: flex;
-    -webkit-box-pack:; -ms-flex-pack:; justify-content: center;
-    flex-wrap: wrap;
-    -webkit-box-align:; -ms-flex-align:; align-items: center;
-    gap: 30px;
-  
-  } */
   .faq-section {
     display: -webkit-box;
     display: -ms-flexbox;
