@@ -186,6 +186,11 @@ body {
   margin-left: 130px;
 }
 
+.navbar-logo img {
+  height: 30px;
+  width: 200px;
+}
+
 @media (max-width: 1100px) {
   .navbar {
     margin-left: 100px;
@@ -202,12 +207,23 @@ body {
   .navbar {
     margin-left: 40px;
   }
+  .navbar-logo img{
+    width: 100px;
+  }
+  .our-service h1{
+    padding-left: 10px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+  .tutor h1{
+    padding-left: 10px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+
 }
 
-.navbar-logo img {
-  height: 30px;
-  width: 200px;
-}
+
 
 .navbar-links {
   display: -webkit-box;
