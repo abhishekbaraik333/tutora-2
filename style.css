@@ -46,14 +46,12 @@
 /*--------------- montserrat ---------------*/
 @font-face {
   font-family: "montserrat-black";
-  src: url("./Tutora/polices/Montserrat/Montserrat-Black.ttf")
-    format("truetype");
+  src: url("./Tutora/polices/Montserrat/Montserrat-Black.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "montserrat-blackitalic";
-  src: url("./Tutora/polices/Montserrat/Montserrat-BlackItalic.ttf")
-    format("truetype");
+  src: url("./Tutora/polices/Montserrat/Montserrat-BlackItalic.ttf") format("truetype");
 }
 
 @font-face {
@@ -63,80 +61,67 @@
 
 @font-face {
   font-family: "montserrat-boldotalic";
-  src: url("./Tutora/polices/Montserrat/Montserrat-BoldItalic.ttf")
-    format("truetype");
+  src: url("./Tutora/polices/Montserrat/Montserrat-BoldItalic.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "montserrat-extrabold";
-  src: url("./Tutora/polices/Montserrat/Montserrat-ExtraBold.ttf")
-    format("truetype");
+  src: url("./Tutora/polices/Montserrat/Montserrat-ExtraBold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "montserrat-extrabolditalic";
-  src: url("./Tutora/polices/Montserrat/Montserrat-ExtraBold.ttf")
-    format("truetype");
+  src: url("./Tutora/polices/Montserrat/Montserrat-ExtraBold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "montserrat-extralight";
-  src: url("./Tutora/polices/Montserrat/Montserrat-ExtraLight.ttf")
-    format("truetype");
+  src: url("./Tutora/polices/Montserrat/Montserrat-ExtraLight.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "montserrat-extralightitalic";
-  src: url("./Tutora/polices/Montserrat/Montserrat-ExtraLightItalic.ttf")
-    format("truetype");
+  src: url("./Tutora/polices/Montserrat/Montserrat-ExtraLightItalic.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "montserrat-italic";
-  src: url("./Tutora/polices/Montserrat/Montserrat-Italic.ttf")
-    format("truetype");
+  src: url("./Tutora/polices/Montserrat/Montserrat-Italic.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "montserrat-light";
-  src: url("./Tutora/polices/Montserrat/Montserrat-Light.ttf")
-    format("truetype");
+  src: url("./Tutora/polices/Montserrat/Montserrat-Light.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "montserrat-lightitalic";
-  src: url("./Tutora/polices/Montserrat/Montserrat-LightItalic.ttf")
-    format("truetype");
+  src: url("./Tutora/polices/Montserrat/Montserrat-LightItalic.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "montserrat-medium";
-  src: url("./Tutora/polices/Montserrat/Montserrat-Medium.ttf")
-    format("truetype");
+  src: url("./Tutora/polices/Montserrat/Montserrat-Medium.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "montserrat-mediumitalic";
-  src: url("./Tutora/polices/Montserrat/Montserrat-MediumItalic.ttf")
-    format("truetype");
+  src: url("./Tutora/polices/Montserrat/Montserrat-MediumItalic.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "montserrat-regular";
-  src: url("./Tutora/polices/Montserrat/Montserrat-Regular.ttf")
-    format("truetype");
+  src: url("./Tutora/polices/Montserrat/Montserrat-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "montserrat-semibold";
-  src: url("./Tutora/polices/Montserrat/Montserrat-SemiBold.ttf")
-    format("truetype");
+  src: url("./Tutora/polices/Montserrat/Montserrat-SemiBold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "montserrat-semibolditalic";
-  src: url("./Tutora/polices/Montserrat/Montserrat-SemiBoldItalic.ttf")
-    format("truetype");
+  src: url("./Tutora/polices/Montserrat/Montserrat-SemiBoldItalic.ttf") format("truetype");
 }
 
 @font-face {
@@ -146,8 +131,7 @@
 
 @font-face {
   font-family: "montserrat-thinitalic";
-  src: url("./Tutora/polices/Montserrat/Montserrat-thinitalic.ttf")
-    format("truetype");
+  src: url("./Tutora/polices/Montserrat/Montserrat-thinitalic.ttf") format("truetype");
 }
 
 /* css style */
@@ -164,17 +148,12 @@ body {
 }
 
 .navbar {
+
   z-index: 9999;
   width: 85%;
   position: fixed !important;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: ;
-  -ms-flex-pack: ;
   justify-content: space-between;
-  -webkit-box-align: ;
-  -ms-flex-align: ;
   align-items: center;
   /* margin: 10px 50px; */
   padding: 1px 20px;
@@ -184,21 +163,22 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 130px;
+
 }
 
-@media (max-width: 1100px) {
+@media(max-width:1100px) {
   .navbar {
     margin-left: 100px;
   }
 }
 
-@media (max-width: 991px) {
+@media(max-width:991px) {
   .navbar {
     margin-left: 70px;
   }
 }
 
-@media (max-width: 500px) {
+@media(max-width:500px) {
   .navbar {
     margin-left: 40px;
   }
@@ -210,8 +190,6 @@ body {
 }
 
 .navbar-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   list-style: none;
   margin: 6px 20px;
@@ -264,8 +242,6 @@ body {
   }
 
   .navbar-links.active {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
 
@@ -274,8 +250,6 @@ body {
   }
 
   .hamburger {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
 }
@@ -290,7 +264,7 @@ body {
 }
 
 /* main {
-  display: -webkit-box; display: -ms-flexbox; display: flex;
+  display: flex;
   padding: 50px;
 }
 
@@ -340,8 +314,9 @@ main p {
   color: white;
 }
 
-.tuteur:hover,
-.parent:hover {
+
+
+.tuteur:hover, .parent:hover {
   background-color: var(--black);
   color: var(--white);
 }
@@ -381,6 +356,7 @@ main p {
   .tutor .tutor-choice {
     padding: 50px 30px !important;
   }
+
 }
 
 .tutor {
@@ -399,17 +375,12 @@ main p {
 }
 
 .tutor .tutor-choice {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding-left: 80px;
   color: white;
   border-bottom: 0.1px solid rgba(226, 226, 226, 0.541);
   gap: 40px;
   padding: 50px 80px;
-  -webkit-transition: ;
-  -moz-transition: ;
-  -o-transition: ;
   transition: all 0.3s ease;
   /* Smooth transition for hover effect */
 }
@@ -431,8 +402,6 @@ main p {
   width: 80%;
   margin: 0px;
   line-height: 24px;
-  -webkit-box-align: ;
-  -ms-flex-align: ;
   align-items: start;
   font-size: 17px;
   color: white;
@@ -459,7 +428,7 @@ main p {
   position: relative;
 }
 
-@media (max-width: 991px) {
+@media (max-width:991px) {
   .about {
     overflow: hidden;
   }
@@ -472,11 +441,7 @@ main p {
   background-color: var(--pann--blue);
   position: sticky;
   top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: ;
-  -ms-flex-pack: ;
   justify-content: space-between;
   z-index: 10;
 }
@@ -555,14 +520,8 @@ main p {
 }
 
 .our-service .services {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: ;
-  -ms-flex-pack: ;
   justify-content: center;
-  -webkit-box-align: ;
-  -ms-flex-align: ;
   align-items: center;
 }
 
@@ -572,6 +531,7 @@ main p {
   width: 100%;
   height: fit-content;
   max-width: 380px;
+
 }
 
 .our-service .services .service p {
@@ -583,6 +543,7 @@ main p {
 }
 
 .our-service .services .service .imgserv {
+
   max-width: 100%;
 }
 
@@ -611,14 +572,8 @@ main p {
   max-width: 1300px;
   margin: auto;
   gap: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: ;
-  -ms-flex-pack: ;
   justify-content: space-around;
-  -webkit-box-align: ;
-  -ms-flex-align: ;
   align-items: center;
   flex-wrap: wrap;
   margin-top: 65px;
@@ -632,22 +587,15 @@ main p {
   height: 300px;
   width: 360px;
   padding: 40px 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   border-radius: 15px;
   flex-direction: column;
-  -webkit-box-align: ;
-  -ms-flex-align: ;
   align-items: center;
 }
 
 .all-steps .steps .step img,
 .all-steps .steps .step h2,
 .all-steps .steps .step p {
-  -webkit-transition: ;
-  -moz-transition: ;
-  -o-transition: ;
   transition: transform 0.3s ease;
   /* Add transition for smooth effect */
 }
@@ -655,9 +603,6 @@ main p {
 .all-steps .steps .step:hover img,
 .all-steps .steps .step:hover h2,
 .all-steps .steps .step:hover p {
-  -webkit-transform: ;
-  -moz-transform: ;
-  -ms-transform: ;
   transform: translateY(-5px);
   /* Move up by 5px on hover */
 }
@@ -677,7 +622,7 @@ main p {
 
 .all-steps .steps .step p {
   color: var(--white);
-
+  
   padding-top: 0px;
   margin-top: 0px;
   text-align: center;
@@ -686,16 +631,12 @@ main p {
   font-family: "montserrat-light";
 }
 
-@media (max-width: 768px) {
+
+
+@media (max-width:768px) {
   .all-steps .steps {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: ;
-    -ms-flex-pack: ;
     justify-content: space-around;
-    -webkit-box-align: ;
-    -ms-flex-align: ;
     align-items: center;
     gap: 30px;
     flex-wrap: wrap;
@@ -716,11 +657,7 @@ main p {
 }
 
 .all-clients .clients {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: ;
-  -ms-flex-pack: ;
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
@@ -759,11 +696,10 @@ main p {
 /* .all-clients .clients .client h4 {
 } */
 
+
 /* faq sectin */
 
 .faq-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
   max-width: 1100px;
@@ -772,17 +708,10 @@ main p {
   border-radius: 10px;
 }
 
-.faq-left,
-.faq-right {
+.faq-left, .faq-right {
   flex: 1 1 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: ;
-  -ms-flex-align: ;
   align-items: flex-start;
-  -webkit-box-pack: ;
-  -ms-flex-pack: ;
   justify-content: center;
   padding: 20px;
 }
@@ -822,14 +751,8 @@ main p {
   font-family: "antonio", sans-serif;
   margin: 0;
   padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: ;
-  -ms-flex-pack: ;
   justify-content: space-between;
-  -webkit-box-align: ;
-  -ms-flex-align: ;
   align-items: center;
 }
 
@@ -837,9 +760,6 @@ main p {
   max-height: 0;
   overflow: hidden;
   font-family: "montserrat-regular";
-  -webkit-transition: ;
-  -moz-transition: ;
-  -o-transition: ;
   transition: max-height 0.3s ease;
   padding: 0 10px;
   margin: 0;
@@ -857,12 +777,12 @@ main p {
   border-radius: 15px;
   margin-top: 90px;
 
+
   clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 }
 
 @media (min-width: 768px) {
-  .faq-left,
-  .faq-right {
+  .faq-left, .faq-right {
     flex: 1;
   }
 
@@ -877,10 +797,7 @@ main p {
     padding: 10px;
   }
 
-  .faq-left,
-  .faq-right {
-    -webkit-box-pack: ;
-    -ms-flex-pack: ;
+  .faq-left, .faq-right {
     justify-content: center;
     padding: 10px;
   }
@@ -903,83 +820,74 @@ main p {
 /* footer */
 
 footer {
-  background-color: #000033;
-  width: 100%;
+    background-color: #000033;
+    width: 100%;
 }
 
 .footer {
-  color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-wrap: wrap;
-  -webkit-box-pack: ;
-  -ms-flex-pack: ;
-  justify-content: space-between;
-  padding: 20px 40px;
-  max-width: 1300px;
-  margin: auto;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 40px;
+    max-width: 1300px;
+    margin: auto;
 }
 
 .footer div {
-  margin: 10px 0;
+    margin: 10px 0;
 }
 
 .footer .logo {
-  margin-right: 90px;
+    margin-right: 90px;
 }
 
 .footer h3 {
-  color: var(--white);
-  font-size: 18px;
-  margin: 0;
-  padding: 0;
-  font-family: "antonio-bold", sans-serif;
-  margin-bottom: 10px;
+    color: var(--white);
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    font-family: "antonio-bold", sans-serif;
+    margin-bottom: 10px;
 }
 
 .footer a {
-  font-size: 12px;
-  font-family: "montserrat-extralight";
-  color: #fff;
-  text-decoration: none;
-  display: block;
-  margin: 5px 0;
+    font-size: 12px;
+    font-family: "montserrat-extralight";
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
 }
 
 .footer a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
-.footer .menu,
-.footer .contact,
-.footer .plus,
-.footer .social {
-  flex: 1 1 100px;
+.footer .menu, .footer .contact, .footer .plus, .footer .social {
+    flex: 1 1 100px;
 }
 
-.footer .menu h3,
-.footer .contact h3,
-.footer .plus h3,
-.footer .social h3 {
-  margin-top: 0;
+.footer .menu h3, .footer .contact h3, .footer .plus h3, .footer .social h3 {
+    margin-top: 0;
 }
 
 .footer .copyright {
-  width: 100%;
-  text-align: center;
-  border-top: 0.5px solid gray;
-  padding-top: 10px;
-  margin-top: 10px;
-  color: var(--white);
+    width: 100%;
+    text-align: center;
+    border-top: .5px solid gray;
+    padding-top: 10px;
+    margin-top: 10px;
+    color: var(--white);
 }
 
 @media (max-width: 768px) {
-  .footer {
-    flex-direction: column;
-    text-align: center;
-  }
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
 }
+
 
 @media (max-width: 767px) {
   .about-top img {
@@ -1022,17 +930,12 @@ footer {
   }
 
   .our-service .services {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     flex-direction: column;
-    -webkit-box-align: ;
-    -ms-flex-align: ;
     align-items: center;
-    -webkit-box-pack: ;
-    -ms-flex-pack: ;
     justify-content: center;
     gap: 30px;
+
   }
 
   .our-service .services .service {
@@ -1042,21 +945,19 @@ footer {
   }
 
   /* .all-clients .clients {
-  display: -webkit-box; display: -ms-flexbox; display: flex;
-  -webkit-box-pack:; -ms-flex-pack:; justify-content: center;
+  display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  -webkit-box-align:; -ms-flex-align:; align-items: center;
+  align-items: center;
   gap: 30px;
 
 } */
 
+
+
   .faq-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
-    -webkit-box-pack: ;
-    -ms-flex-pack: ;
     justify-content: center;
     max-width: 1100px;
     margin: 50px auto;
@@ -1069,10 +970,7 @@ footer {
     border-bottom: 1px solid #000000;
   }
 
-  .footer .menu,
-  .footer .contact,
-  .footer .plus,
-  .footer .social {
+  .footer .menu, .footer .contact, .footer .plus, .footer .social {
     flex: 1 1 100px;
   }
 
@@ -1082,17 +980,15 @@ footer {
 
   .footer .logo img {
     width: 220px;
+
   }
 
   .navbar {
     z-index: 9999;
     width: 78%;
     position: fixed;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     justify-content: space-between;
-
     align-items: center;
     /* margin: 10px 30px; */
     padding: 10px 40px 10px 0px !important;
@@ -1117,7 +1013,16 @@ footer {
   }
 }
 
-@media (max-width: 490px) {
+@media (max-width:490px) {
+  .about {
+    background-color: var(--pann--blue);
+    width: 100%;
+    height: 390vh;
+  }
+
+}
+
+@media (max-width:390px) {
   .about {
     background-color: var(--pann--blue);
     width: 100%;
@@ -1125,15 +1030,7 @@ footer {
   }
 }
 
-@media (max-width: 390px) {
-  .about {
-    background-color: var(--pann--blue);
-    width: 100%;
-    height: 390vh;
-  }
-}
-
-@media (max-width: 550px) {
+@media (max-width:550px) {
   .all-steps h1 {
     padding-left: 10px;
     font-size: 25px;
@@ -1146,6 +1043,7 @@ footer {
     margin-bottom: 30px;
   }
 }
+
 
 /* --------Why Us Section--------- */
 
@@ -1174,7 +1072,7 @@ footer {
   color: black;
 }
 
-.text-start {
+.text-start{
   margin-left: -45px;
 }
 
@@ -1184,7 +1082,7 @@ footer {
     color: #707070;
     padding: 0 10px;
   }
-  .text-start {
+  .text-start{
     text-align: center;
     margin-left: -30px;
   }
