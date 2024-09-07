@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutora - Tarifs</title>
+
+    <!-------Font Awesome------->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <!-------Bootstrap CSS CDN------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <!-------Bootstrap Script CDN------->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="icon" href="Tutora/favicons/favicon-16x16.png" type="image" sizes="16x16">
+
+
+    <style>
+        .hidden {
+            display: none;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 55px;
+            height: 22px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #2196F3;
+            transition: .4s;
+            border-radius: 34px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 15px;
+            width: 20px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        input:checked+.slider {
+            background-color: #2196F3;
+        }
+
+        input:checked+.slider:before {
+            transform: translateX(26px);
+        }
+
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+
+        .li_one {
+            display: none;
+        }
+
+        .li_two {
+            display: none;
+        }
+
+        .li_three {
+            display: none;
+        }
+
+        .open_one {
+            display: block !important;
+        }
+
+        .open_two {
+            display: block !important;
+        }
+
+        .open_three {
+            display: block !important;
+        }
+
+        .btn-design {
+            color: #f91974;
+        }
+
+        .rate-top-btn button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
+        .rate-top-btn button.clicked {
+            color: #f91974;
+            border-bottom: 3px solid #f91974;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <!------------- Navbar Section ------------->
+    <section class="nav-sec text-center">
+
+        <nav class="navbar text-center">
+
+            <div class="navbar-logo">
+                <a href="/"><img src="./Tutora/logo/logo bleu fond transparent.png" alt="Utora Logo" /></a>
+            </div>
+            <ul class="navbar-links">
+
+                <li><a href="./services">Nos Services</a></li>
+                <li><a href="./tutors">Nos Tuteurs</a></li>
+                <li><a href="./whoare">Qui sommes-nous</a></li>
+                <li><a href="./rates">Nos tarifs</a></li>
+                <li><a href="./blog">Blog</a></li>
+                <li><a href="./contact" class="connexion-btn">Contact</a></li>
+            </ul>
+
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </section>
+
+    <!------------- Hero Section ------------->
+    <header class="hero">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1 class="display-4">Nos tarifs </h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!------------- Rates Section ------------->
+    <div id="rates">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <div class="rate-top-btn">
+                        <button id="mois_one">1 mois</button>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="rate-top-btn">
+                        <button id="mois_two">3 mois -10%</button>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="rate-top-btn">
+                        <button id="mois_three">6 mois -15% </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <!--------------First Table-------------- -->
+                <div class="col-md-4 mt-4 text-center">
+                    <div class="rate-table">
+                        <div class="row">
+                            <div class="col-12 text-end">
+                                <p>Distance
+                                    <label class="switch">
+                                        <input type="checkbox" class="switch-toggle">
+                                        <span class="slider round"></span>
+                                    </label>
+                                    Domicile
+                                </p>
+                            </div>
+                        </div>
+                        <h1>1 Heure<span>/mois</span></h1>
+                        <div class="rate-btn">
+                            <button>S'inscrire</button>
+                        </div>
+                        <p class="bottom-para"></p>
+                        <p>Nombre de sessions par mois</p>
+                        <h4 class="domicile">A domicile</h4>
+                        <div class="row domicile">
+                            <div class="col-6">
+                                <ul class="list-unstyled">
+                                    <h5>4</h5>
+                                    <div class="li_one">
+                                        <li>396 DH</li>
+                                    </div>
+                                    <div class="li_two">
+                                        <li>594 DH</li>
+                                    </div>
+                                    <div class="li_three">
+                                        <li>792 DH</li>
+                                    </div>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="list-unstyled">
+                                    <h5>8</h5>
+                                    <div class="li_one">
+                                        <li>792 DH</li>
+                                    </div>
+                                    <div class="li_two">
+                                        <li>1188 DH</li>
+                                    </div>
+                                    <div class="li_three">
+                                        <li>1584 DH</li>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                        <h4 class="distance hidden">A distance</h4>
+                        <div class="row distance hidden">
+                            <div class="col-6">
+                                <ul class="list-unstyled">
+                                    <h5>4</h5>
+                                    <div class="li_one">
+                                        <li>316 DH</li>
+                                    </div>
+                                    <div class="li_two">
+                                        <li>474 DH</li>
+                                    </div>
+                                    <div class="li_three">
+                                        <li>632 DH</li>
+                                    </div>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="list-unstyled">
+                                    <h5>8</h5>
+                                    <div class="li_one">
+                                        <li>632 DH</li>
+                                    </div>
+                                    <div class="li_two">
+                                        <li>948 DH</li>
+                                    </div>
+                                    <div class="li_three">
+                                        <li>1264 DH</li>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--------------Second Table-------------- -->
+                <div class="col-md-4 mt-4 text-center">
+                    <div class="rate-table">
+                        <div class="row">
+                            <div class="col-12 text-end">
+                                <p>Distance
+                                    <label class="switch">
+                                        <input type="checkbox" class="switch-toggle">
+                                        <span class="slider round"></span>
+                                    </label>
+                                    Domicile
+                                </p>
+                            </div>
+                        </div>
+                        <h1>1.5 Heure<span>/mois</span></h1>
+                        <div class="rate-btn">
+                            <button>S'inscrire</button>
+                        </div>
+                        <p class="bottom-para"></p>
+                        <p>Nombre de sessions par mois</p>
+                        <h4 class="domicile">A domicile</h4>
+                        <div class="row domicile">
+                            <div class="col-6">
+                                <ul class="list-unstyled">
+                                    <h5>4</h5>
+                                    <div class="li_one">
+                                        <li>356,4 DH</li>
+                                    </div>
+                                    <div class="li_two">
+                                        <li>534,6 DH</li>
+                                    </div>
+                                    <div class="li_three">
+                                        <li>712,8 DH</li>
+                                    </div>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="list-unstyled">
+                                    <h5>8</h5>
+                                    <div class="li_one">
+                                        <li>712,8 DH</li>
+                                    </div>
+                                    <div class="li_two">
+                                        <li>1069,2 DH</li>
+                                    </div>
+                                    <div class="li_three">
+                                        <li>1425,6 DH</li>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                        <h4 class="distance hidden">A distance</h4>
+                        <div class="row distance hidden">
+                            <div class="col-6">
+                                <ul class="list-unstyled">
+                                    <h5>4</h5>
+                                    <div class="li_one">
+                                        <li>284,4 DH</li>
+                                    </div>
+                                    <div class="li_two">
+                                        <li>426,6 DH</li>
+                                    </div>
+                                    <div class="li_three">
+                                        <li>568,8 DH</li>
+                                    </div>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="list-unstyled">
+                                    <h5>8</h5>
+                                    <div class="li_one">
+                                        <li>568,8 DH</li>
+                                    </div>
+                                    <div class="li_two">
+                                        <li>853,2 DH</li>
+                                    </div>
+                                    <div class="li_three">
+                                        <li>1137,6 DH</li>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--------------Third Table-------------- -->
+                <div class="col-md-4 mt-4 text-center">
+                    <div class="rate-table">
+                        <div class="row">
+                            <div class="col-12 text-end">
+                                <p>Distance
+                                    <label class="switch">
+                                        <input type="checkbox" class="switch-toggle">
+                                        <span class="slider round"></span>
+                                    </label>
+                                    Domicile
+                                </p>
+                            </div>
+                        </div>
+                        <h1>2 Heures<span>/mois</span></h1>
+                        <div class="rate-btn">
+                            <button>S'inscrire</button>
+                        </div>
+                        <p class="bottom-para"></p>
+                        <p>Nombre de sessions par mois</p>
+                        <h4 class="domicile">A domicile</h4>
+                        <div class="row domicile">
+                            <div class="col-6">
+                                <ul class="list-unstyled">
+                                    <h5>4</h5>
+                                    <div class="li_one">
+                                        <li>336,6 DH</li>
+                                    </div>
+                                    <div class="li_two">
+                                        <li>504,9 DH</li>
+                                    </div>
+                                    <div class="li_three">
+                                        <li>673,2 DH</li>
+                                    </div>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="list-unstyled">
+                                    <h5>8</h5>
+                                    <div class="li_one">
+                                        <li>673,2 DH</li>
+                                    </div>
+                                    <div class="li_two">
+                                        <li>1009,8 DH</li>
+                                    </div>
+                                    <div class="li_three">
+                                        <li>1346,4 DH</li>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                        <h4 class="distance hidden">A distance</h4>
+                        <div class="row distance hidden">
+                            <div class="col-6">
+                                <ul class="list-unstyled">
+                                    <h5>4</h5>
+                                    <div class="li_one">
+                                        <li>268,6 DH</li>
+                                    </div>
+                                    <div class="li_two">
+                                        <li>402,9 DH</li>
+                                    </div>
+                                    <div class="li_three">
+                                        <li>537,2 DH</li>
+                                    </div>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="list-unstyled">
+                                    <h5>8</h5>
+                                    <div class="li_one">
+                                        <li>537,2 DH</li>
+                                    </div>
+                                    <div class="li_two">
+                                        <li>805,8 DH</li>
+                                    </div>
+                                    <div class="li_three">
+                                        <li>1074,4 DH</li>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!------------- Footer Section ------------->
+    <footer>
+        <div class="footer">
+            <div class="logo">
+                <img src="./logo fond bleu.png" width="120px" alt="Logo">
+            </div>
+            <div class="menu">
+                <h3>Menu</h3>
+                <a href="#">Qui sommes nous</a>
+                <a href="#">Blog</a>
+                <a href="#">Partenaires</a>
+                <a href="#">Presse</a>
+                <a href="#">Avis clients</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="contact">
+                <h3>Contact</h3>
+                <a href="tel:1234567890">123-456-7890</a>
+                <a href="mailto:info@xxxx.com">info@xxxx.com</a>
+            </div>
+            <div class="plus">
+                <h3>Plus</h3>
+                <a href="#">CGV</a>
+                <a href="#">Politique de confidentialité</a>
+                <a href="#">Mentions légales</a>
+                <a href="#">FAQ</a>
+            </div>
+            <div class="social">
+                <h3>Social</h3>
+                <a href="#">Facebook</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Instagram</a>
+            </div>
+            
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var switchToggles = document.querySelectorAll('.switch-toggle');
+            var durationButtons = document.querySelectorAll('[data-duration]');
+
+            switchToggles.forEach(function (toggle) {
+                toggle.addEventListener('change', function () {
+                    var isMonthly = toggle.checked;
+                    var rateTable = toggle.closest('.rate-table');
+                    toggleVisibility(isMonthly, rateTable);
+                });
+            });
+
+            durationButtons.forEach(function (button) {
+                button.addEventListener('click', function () {
+                    var duration = button.getAttribute('data-duration');
+                    toggleDurationVisibility(duration);
+                });
+            });
+
+            function toggleVisibility(isMonthly, rateTable) {
+                var domicileElements = rateTable.querySelectorAll('.domicile');
+                var distanceElements = rateTable.querySelectorAll('.distance');
+
+                if (isMonthly) {
+                    domicileElements.forEach(function (elem) {
+                        elem.classList.remove('hidden');
+                    });
+                    distanceElements.forEach(function (elem) {
+                        elem.classList.add('hidden');
+                    });
+                } else {
+                    domicileElements.forEach(function (elem) {
+                        elem.classList.add('hidden');
+                    });
+                    distanceElements.forEach(function (elem) {
+                        elem.classList.remove('hidden');
+                    });
+                }
+            }
+
+            function toggleDurationVisibility(duration) {
+                var allDurations = document.querySelectorAll('.duration');
+                allDurations.forEach(function (elem) {
+                    elem.classList.add('hidden');
+                });
+
+                var selectedDurations = document.querySelectorAll('.duration-' + duration);
+                selectedDurations.forEach(function (elem) {
+                    elem.classList.remove('hidden');
+                });
+            }
+
+            // Set default visibility
+            switchToggles.forEach(function (toggle) {
+                var rateTable = toggle.closest('.rate-table');
+                toggleVisibility(toggle.checked, rateTable);
+            });
+
+            // Set default duration visibility to 1 mois
+            toggleDurationVisibility(1);
+        });
+
+
+        // --------------------------------------- 
+
+        // mois_one.onclick = function () {
+        //     open_elements.forEach(function (element) {
+        //         element.classList.toggle("li_one");
+        //     });
+        // };
+
+        // mois_two.onclick = function () {
+        //     open_elements2.forEach(function (element) {
+        //         element.classList.toggle("li_two");
+        //     });
+        // };
+
+        // mois_three.onclick = function () {
+        //     open_elements3.forEach(function (element) {
+        //         element.classList.toggle("li_three");
+        //     });
+        // };
+
+        const mois_one = document.getElementById("mois_one");
+        const mois_two = document.getElementById("mois_two");
+        const mois_three = document.getElementById("mois_three");
+        const open_elements = document.querySelectorAll(".li_one");
+        const open_elements2 = document.querySelectorAll(".li_two");
+        const open_elements3 = document.querySelectorAll(".li_three");
+
+
+        mois_one.onclick = function () {
+            open_elements.forEach(function (element) {
+                element.classList.toggle("open_one");
+            });
+            open_elements2.forEach(function (element) {
+                element.classList.remove("open_two");
+                element.classList.remove("open_three");
+            });
+            open_elements3.forEach(function (element) {
+                element.classList.remove("open_two");
+                element.classList.remove("open_three");
+            });
+        };
+
+        mois_two.onclick = function () {
+            open_elements.forEach(function (element) {
+                element.classList.remove("open_one");
+            });
+            open_elements2.forEach(function (element) {
+                element.classList.toggle("open_two");
+            });
+            open_elements3.forEach(function (element) {
+                element.classList.remove("open_one");
+                element.classList.remove("open_three");
+            });
+        };
+
+        mois_three.onclick = function () {
+            open_elements.forEach(function (element) {
+                element.classList.remove("open_one");
+            });
+            open_elements2.forEach(function (element) {
+                element.classList.remove("open_two");
+            });
+            open_elements3.forEach(function (element) {
+                element.classList.toggle("open_three");
+            });
+        };
+
+
+        // Function to handle button click
+        function handleButtonClick(event) {
+            // Remove 'clicked' class from all buttons
+            document.querySelectorAll('.rate-top-btn button').forEach(button => {
+                button.classList.remove('clicked');
+            });
+            // Add 'clicked' class to the clicked button
+            event.target.classList.add('clicked');
+        }
+
+        // Add event listeners to all buttons
+        document.querySelectorAll('.rate-top-btn button').forEach(button => {
+            button.addEventListener('click', handleButtonClick);
+        });
+
+    </script>
+
+
+
+</body>
+
+</html>
